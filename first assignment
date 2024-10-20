@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first web Page</title>
+
+    <!-- InternaL Styling -->
+    <style>
+        /* had to use the universal selector in other to get background to occupy the page  */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a:hover{
+            background-color: rgb(199, 35, 35);
+        }
+h2{
+    text-align: center;
+    color: whitesmoke;
+    background: green;
+    max-width: 100%;
+    padding: 0.8rem;
+    font-size: x-small;
+    font-family: 'Arial Narrow Bold', sans-serif
+}
+a{
+  margin: 0.3rem;
+  padding: 0.2rem;
+  text-decoration: none;
+  font-size: x-small;
+}
+img{
+    margin: 0.5rem;
+    width:25rem;
+    height: 11rem;
+}
+p{
+   margin: 0.3rem;
+   padding: 0.5rem;
+   text-align:center;
+   float: left;
+   font-size: xx-small;
+   
+}
+/* reason for the clear was to clear the float left  */
+ol{
+    list-style: none;
+    clear: both;
+}
+h3{
+    margin: 0.4rem;
+}
+ul{
+    margin: 1.4rem ;
+    padding: 0.3rem;
+    font-size: x-small;
+    
+}
+table{
+    width: 35%;
+    margin: 10px;
+}
+th, td{
+border: 1px solid;
+padding: 6px;
+text-align: center;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+   <header>
+    <h2>My First Webpage</h2>
+    <nav>
+        <a href="#content">Webpage Contents</a>
+        <a href="#table">Information Table</a>
+        <a href="#form">Contact Form</a>
+    </nav>
+    <img src="image/beach.jpeg" alt="beach">
+   </header>
+   <div>
+    <p>This is a sample paragraph describing the content of the webpage. it explains the purpose of the page and <br>provides some basic information about what users can expect to find.</p>
+   </div> 
+   <ol>
+    <li>
+        <a href="https://www.techyjaunt.com/" target="_blank">visit Techyjaunt</a>
+    </li>
+   </ol>
+   <br><br>
+   <div>
+    <!-- Id--using the Id in linking within the page -->
+    <h3 id="content">Webpage Contents</h3>
+    <ul>
+        <li>Introduction</li>
+        <li>Table of Information</li>
+        <li>Contact Form</li>
+    </ul>
+   </div>
+
+   <div>
+    <h3 id="table">Information Table</h3>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Item</th>
+            <th>Description</th>
+            <th>Quantity</th>
+        </tr>
+        <tr>
+            <td>Pens</td>
+            <td>Blue ink Pens</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Notebooks</td>
+            <td>Spira-bound Notebooks</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Makers</td>
+            <td>permanent Makers</td>
+            <td>2</td>
+        </tr>
+    </table>
+   </div> <br>
+
+   <div>
+        <h3 id="form">Contact Form</h3>
+        <form> 
+            <!-- text input -->
+            <label for="text">Name</label>
+            <input type="text" name="username" placeholder="enter username"><br> <br>
+            <!-- Email input -->
+            <label for="email">Email</label>
+            <input type="email" name="useremail" placeholder="enter email"><br> <br>
+            <!-- password input -->
+            <label for="password">Password</label>
+            <input type="password" name="Password" placeholder="Enter your password"><br><br>
+            <!-- Radio Buttons -->
+            <label for="radio">Gender</label>
+            <input type="radio" name="Gender" value="male">Male
+            <input type="radio" name="Gender" value="female">Female <br> <br>
+            <!-- Checkbox -->
+            <label for="checkbox">Subscribe</label>
+            <input type="checkbox" name="subscribe" value="subscribe">Yes, i want to subscribe <br> <br>
+            <!-- number  Input-->
+            <label for="number">Age</label>
+            <input type="number" name="age" min="1" max="100" placeholder="Enter your age" required><br><br>
+            <!-- Date -->
+            <label for="Date">Date</label>
+            <input type="date" name="dob"><br><br>
+            <!-- Textarea -->
+            <label for="comments">Message</label>
+            <textarea name="comments" cols="30" rows="10" placeholder="Enter your comments"></textarea><br><br>
+            
+            <!-- Submit -->
+            <input type="submit" value="submit">
+        </form>
+       
+   </div>
+</body>
+</html>
